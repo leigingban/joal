@@ -28,8 +28,8 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void configureWebSocketTransport(final WebSocketTransportRegistration registration) {
         registration
-                .setMessageSizeLimit(5000 * 1024) // Max incoming message size => 5Mo
-                .setSendBufferSizeLimit(5000 * 1024); // Max outgoing buffer size => 5Mo
+                .setMessageSizeLimit(10000 * 1024) // Max incoming message size => 10Mo
+                .setSendBufferSizeLimit(10000 * 1024); // Max outgoing buffer size => 10Mo
     }
 
     @Override
